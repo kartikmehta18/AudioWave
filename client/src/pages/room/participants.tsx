@@ -1,5 +1,5 @@
 import {
-  Avatar,
+  
   ParticipantsAudio,
   useCallStateHooks,
 } from "@stream-io/video-react-sdk";
