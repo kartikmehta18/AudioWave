@@ -179,7 +179,7 @@ export const Room = () => {
       </main>
 
       {/* Animated Audio Wave */}
-      <style jsx>{`
+      <style>{`
         .audio-wave {
           background: linear-gradient(
             90deg,
