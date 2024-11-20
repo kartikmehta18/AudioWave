@@ -172,11 +172,12 @@ export const SignIn = () => {
       PEOPLES_IMAGES[Math.floor(Math.random() * PEOPLES_IMAGES.length)];
 
     try {
-      // Call the backend API to create a user
-      const response = await fetch("http://localhost:3000/auth/createUser", {
+      // Call the backend API to create a user https://audiowave.onrender.com
+      //const response = await fetch("http://localhost:3000/auth/createUser", {
+        const response = await fetch("https://audiowave.onrender.com/auth/createUser", {
         method: "POST",
         headers: {
-          "Content-Type": "application/json",
+          "Content-Type": "application/json",                
         },
         body: JSON.stringify({
           username,
