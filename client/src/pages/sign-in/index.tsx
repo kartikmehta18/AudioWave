@@ -228,7 +228,7 @@ export const SignIn = () => {
   } = useForm<FormValues>({ resolver: yupResolver(schema) });
 
   return (
-    <div className="min-h-screen bg-black flex flex-col justify-center items-center p-4">
+    <div className="min-h-screen flex flex-col justify-center items-center p-4">
       <div className="w-full max-w-md">
         <div className="text-center mb-8">
           <h1 className="text-4xl font-bold text-white mb-2 relative inline-block">
