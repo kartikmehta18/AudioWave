@@ -6,11 +6,13 @@ import { SignIn } from "./pages/sign-in/index";
 import { Room } from "./pages/room/index";
 import { StreamCall } from "@stream-io/video-react-sdk";
 import { useUser } from "./user-context";
+import Navbar from './Header';
 function App() {
   const {call} = useUser();
   return (
     <>
       <Router>
+      <Navbar />
         <Routes>
           <Route path="/" element={<MainPage />} />
           <Route path="/sign-in" element={<SignIn />} />

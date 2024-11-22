@@ -141,9 +141,9 @@ export const MainPage = () => {
 
   return (
     <StreamVideo client={client!}>
-      <div className="min-h-screen bg-black text-white flex">
+      <div className="min-h-screen flex  text-white -mt-[96px]">
         {/* Sidebar */}
-        <aside className="w-64 bg-gray-900 p-6 flex flex-col">
+        <aside className=" w-64 hidden sm:block  bg-white/5 p-6 flex-col ">
           <h1 className="text-2xl font-bold mb-8">Audio Wave</h1>
           <nav className="flex-grow">
             <ul className="space-y-2">
@@ -181,7 +181,7 @@ export const MainPage = () => {
         </aside>
 
         {/* Main content */}
-        <main className="flex-grow p-8">
+        <main className="flex-grow p-8 mt-24">
           <header className="mb-8">
             <h2 className="text-3xl font-bold">Welcome, {user?.name}</h2>
             <p className="text-gray-400">
@@ -190,7 +190,7 @@ export const MainPage = () => {
           </header>
 
           {/* Create Room Form */}
-          <div className="bg-gray-900 rounded-lg p-6 max-w-md mb-8">
+          <div className="bg-white/5 border border-purple-400 rounded-lg p-6 max-w-md mb-8">
             <h3 className="text-xl font-semibold mb-4">Create your own room</h3>
             {error && (
               <div className="bg-red-500 text-white p-2 rounded-md mb-4">
@@ -267,9 +267,9 @@ export const MainPage = () => {
             {fetchingRooms ? (
               <p>Loading available rooms...</p>
             ) : availableRooms.length ? (
-              <div className="grid gap-4">
+              <div className="grid gap-4 xl:grid-cols-4 ">
                 {availableRooms.map((room) => (
-                  <div key={room.id} className="bg-gray-800 p-4 rounded-lg" onClick={()=> joinCall(room.id)}>
+                  <div key={room.id} className="bg-white/5 p-4 rounded-lg " onClick={()=> joinCall(room.id)}>
                     <h4 className="font-bold text-lg">{room.name}</h4>
                     <p>{room.description}</p>
                     <p>{room.participantsLength} participants</p>

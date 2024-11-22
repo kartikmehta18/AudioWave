@@ -122,7 +122,7 @@ export const Room = () => {
   );
 
   return (
-    <div className="min-h-screen bg-black text-white flex flex-col">
+    <div className="min-h-screen  text-white flex flex-col ">
       {/* Header */}
       <header className="bg-gray-900 p-4 border-b border-gray-800">
         <h1 className="text-2xl font-bold">

@@ -11,13 +11,18 @@
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",
+    "@radix-ui/react-slot": "^1.1.0",
     "@stream-io/video-react-sdk": "^1.7.17",
     "@types/crypto-js": "^4.2.2",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
     "crypto-js": "^4.2.0",
     "lucide-react": "^0.460.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.28.0",
+    "tailwind-merge": "^2.5.4",
+    "tailwindcss-animate": "^1.0.7",
     "universal-cookie": "^7.2.2",
     "yup": "^1.4.0"
   },
