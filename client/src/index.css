@@ -1,13 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
 :root {
   /* Uncomment this to enable a custom cursor */
-  /* cursor: url('/cursor1.png'), auto; */
+  /* cursor: url('../public/cur.png'), default; */
 
   background-image: url("/Hero.png");
   background-color: #000000;
@@ -139,3 +136,9 @@
     @apply bg-background text-foreground;
   }
 }
+
+
+  .cursor-custom {
+    cursor: url('/cur.png'), auto;
+  }
+
