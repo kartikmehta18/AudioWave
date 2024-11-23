@@ -7,14 +7,16 @@ import { Room } from "./pages/room/index";
 import { StreamCall } from "@stream-io/video-react-sdk";
 import { useUser } from "./user-context";
 import Navbar from './Header';
+import Home from './Home';
 function App() {
   const {call} = useUser();
   return (
     <>
-      <Router>
+      <Router >
       <Navbar />
         <Routes>
-          <Route path="/" element={<MainPage />} />
+        <Route path="/" element={<Home />} />
+          <Route path="/main" element={<MainPage />} />
           <Route path="/sign-in" element={<SignIn />} />
           <Route
             path="/room"
@@ -22,7 +24,8 @@ function App() {
               call ?
               <StreamCall call={call}>
                 <Room />
-              </StreamCall> : <Navigate to="/"/>
+              {/* </StreamCall> : <Navigate to="/"/> */}
+               </StreamCall> : <Navigate to="/main"/>
             }
           />
         </Routes>
