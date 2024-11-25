@@ -173,8 +173,8 @@ export const SignIn = () => {
 
     try {
       // Call the backend API to create a user https://audiowave.onrender.com
-      const response = await fetch("http://localhost:3000/auth/createUser", {
-        // const response = await fetch("https://audiowave.onrender.com/auth/createUser", {
+      // const response = await fetch("http://localhost:3000/auth/createUser", {
+        const response = await fetch("https://audiowave.onrender.com/auth/createUser", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
