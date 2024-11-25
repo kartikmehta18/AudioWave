@@ -214,7 +214,7 @@ export const SignIn = () => {
       cookies.set("username", username, { expires });
       cookies.set("name", name, { expires });
 
-      navigate("/");
+      navigate("/main");
     } catch (error) {
       console.error("Error during sign-in:", error);
       alert("An unexpected error occurred. Please try again.");
@@ -228,7 +228,7 @@ export const SignIn = () => {
   } = useForm<FormValues>({ resolver: yupResolver(schema) });
 
   return (
-    <div className="min-h-screen flex flex-col justify-center items-center p-4 -mt-[96px]">
+    <div className="min-h-screen flex flex-col justify-center items-center p-4 -mt-[160px]">
       <div className="w-full max-w-md">
         <div className="text-center mb-8">
           <h1 className="text-4xl font-bold text-white mb-2 relative inline-block">

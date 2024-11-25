@@ -7,7 +7,7 @@
   /* cursor: url('../public/cur.png'), default; */
 
   background-image: url("/Hero.png");
-  background-color: #000000;
+  background-color: #0a0a0a;
   background-repeat: no-repeat;
   background-size: cover; /* Ensures the image covers the entire viewport */
   background-position: center; /* Centers the image in the viewport */
