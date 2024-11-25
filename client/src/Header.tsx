@@ -1,5 +1,6 @@
 import { Button } from "./components/ui/button";
 import { Home } from "lucide-react";
+// import Button1 from "./components/ui/btn";
 
 export default function Navbar() {
   return (
@@ -18,15 +19,16 @@ export default function Navbar() {
           href="/main"
           className="text-white text-sm hover:text-gray-300 transition-colors"
         >
-          Audio 
+          Audio
         </a>
         <a
           href="#"
           className="text-white text-sm hover:text-gray-300 transition-colors"
         >
-          Chat 
+          Chat
         </a>
       </div>
+
       <a href="/sign-in">
         <Button
           variant="outline"
