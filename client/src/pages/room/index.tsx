@@ -124,7 +124,7 @@ export const Room = () => {
   return (
     <div className="min-h-screen  text-white flex flex-col ">
       {/* Header */}
-      <header className="bg-gray-900 p-4 border-b border-gray-800">
+      <header className="bg- p-4 ">
         <h1 className="text-2xl font-bold">
           {custom?.title ?? "Untitled Room"}
         </h1>
@@ -136,7 +136,7 @@ export const Room = () => {
       {/* Main Content */}
       <main className="flex-grow flex flex-col lg:flex-row lg:items-start p-6 space-y-6 lg:space-y-0 lg:space-x-6">
         {/* Participants Section */}
-        <section className="bg-gray-900 rounded-lg p-4 w-full lg:w-1/3 shadow-md">
+        <section className="bg-white/10 rounded-lg p-4 w-full lg:w-1/3 shadow-md">
           <div className="flex items-center mb-4">
             <Users className="text-purple-500 mr-2" />
             <h2 className="text-lg font-semibold">
@@ -147,7 +147,7 @@ export const Room = () => {
         </section>
 
         {/* Room Info Section */}
-        <section className="bg-gray-900 rounded-lg p-6 w-full lg:w-2/3 shadow-md">
+        <section className="bg-white/10 rounded-lg p-6 w-full lg:w-2/3 shadow-md">
           <div className="flex items-center justify-between mb-4">
             <div className="flex items-center">
               <Music className="text-purple-500 mr-2" />

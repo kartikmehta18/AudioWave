@@ -10,7 +10,7 @@ export const Participants = () => {
   const participants = useParticipants();
 
   return (
-    <div className="w-full max-w-lg mx-auto bg-gray-800 shadow-md rounded-lg p-4">
+    <div className="w-full max-w-lg mx-auto bg-white/10  shadow-md rounded-lg p-4">
       <h4 className="text-xl font-semibold text-white mb-4">Participants</h4>
       <div className="space-y-4">
         <ParticipantsAudio participants={participants} />
